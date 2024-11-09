@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.comp{
+    
+        font-family: "Itim", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+.font2{
+        font-family: "Syne", sans-serif;
+        /* font-optical-sizing: auto; */
+        font-weight: 600;
+        font-style: normal;
+      }
+
+
+.cir1{
+        filter: blur(20px);
+        animation-name: anime1;
+        animation-duration: 4s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+      }
+
+      
+      .cir2{
+        filter: blur(20px);
+        animation-name: anime2;
+        animation-duration: 6s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+      }
+
+      .cir3{
+        filter: blur(20px); 
+        animation-name: anime3;
+        animation-duration: 2s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+      }
+@keyframes anime1 {
+
+from{
+        transform: translateY( 0 );
+}to{
+        transform: translateY(-35% );
+}
+        
+}
+
+@keyframes anime2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(35%, -15%);
+        }
+        50% {
+          transform: translate(0, -30%);
+        }
+        75% {
+          transform: translate(-35%, -15%);
+        }
+        100% {
+          transform: translateY(50, -50);
+        }
+      }
+      
+@keyframes anime3 {
+
+        from{
+                transform: translateY( 0 );
+        }to{
+                transform: translateY(-30% );
+        }
+                          }        
+
+.move{
+        animation: moves 10s linear infinite;
+
+}
+
+@keyframes moves {
+        from{
+                transform: translateX(0);
+        }
+        to{
+                transform: translateX(-100%);
+        }
+        
+}
+
+.blur{
+        filter: blur(30px);  
+}
+@keyframes anime4 {
+
+        0% {
+                transform: translate(0, 50%);
+              }
+             
+              50% {
+                transform: translate(25%, 50%);
+              }
+               
+              100% {
+                transform: translate(50%, 100%);
+              }    }       
+
+.circ{
+        animation-name: anime4;
+        animation-duration: 2s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+
+}
